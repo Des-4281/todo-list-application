@@ -39,3 +39,19 @@ def exit_program():
     print("Exiting the program. Goodbye!")
     exit()
 
+def main():
+    while True:
+        display_menu()
+        choice = input("Enter your choice (1-4): ")
+        if choice == '1':
+            add_task()
+        elif choice == '2':
+            view_tasks()
+        elif choice == '3':
+            remove_task()
+        elif choice == '4':
+             exit_program()
+        else:
+            print("Invalid choice. Please enter a number between 1 and 4.")
+if __name__ == "__main__":    
+    main()
