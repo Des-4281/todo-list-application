@@ -34,3 +34,8 @@ def remove_task():
     except IndexError:
             print("Invalid task number. Please try again.")
             return
+
+def exit_program():
+    print("Exiting the program. Goodbye!")
+    exit()
+
